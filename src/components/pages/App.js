@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../molecules/Header";
 import Body from "../molecules/Body";
-import SideBar from "./components/SideBar";
-import Footer from "./components/Footer";
+import SideBar from "../molecules/SideBar";
+import Footer from "../molecules/Footer";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header subTitle="Website untuk belajar ReactJS" />
       <Body />
       <SideBar />
       <Footer />

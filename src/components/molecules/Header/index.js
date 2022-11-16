@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../atoms/Logo";
 import TopNavbar from "../TopNavbar";
+import Button from "../../atoms/Button";
 
-const Header = () => {
+const Header = (props) => {
+  // let title = "Welcome to my website";
+  const [title, setTitle] = useState("Welcome to my website");
+
+  const handleClick = () => {
+    setTitle("Selamat datang di website saya");
+    console.log(title);
+  };
+
   return (
     <>
-      <h1> Welcome to my website </h1>
-      <Logo />
       <TopNavbar />
+      <h1> {title} </h1>
+      <h3> {props.subTitle}</h3>
+      <Button title="Change Title" handleClick={handleClick} />
+      <Logo />
     </>
   );
 };
