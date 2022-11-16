@@ -7,7 +7,7 @@ import Footer from "../molecules/Footer";
 export default function App() {
   return (
     <div>
-      <Header />
+      <Header subTitle="Website ini untuk belajar React" />
       <Body />
       <Sidebar />
       <Footer />
